@@ -21,10 +21,9 @@ window.tk8 = tk8 = (function(element) {
       text.appendChild(wordNode);
       wordNodes.push(wordNode);
     }
-
-    $el.empty()
-    el.appendChild(text);
-    el.appendChild(ellipsis);
+    text.appendChild(ellipsis);
+    
+    el.replaceChild(text, el.firstChild);
 
     while (!_isDesiredHeight($el)) {
       lastWordNode = wordNodes.pop();

@@ -1,0 +1,12 @@
+{
+  "framework": "jasmine",
+  "before_tests": "gulp build && gulp test:build",
+	"serve_files": [
+		"bower_components/jquery/dist/jquery.js",
+		"dist/index.js",
+    "spec/tmp/**/*.spec.js"
+	],
+  "src_files": [
+    "**/*.coffee"
+  ]
+}
